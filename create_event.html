@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title></title>
+</head>
+<body>
+  <!-- BARRA DE NAVEGACION-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border">
+    <a class="navbar-brand border-right orange-color pr-2" id='color-orange'href="#">Eventbrite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item border-right border-left p-1">
+          <a class="nav-link" href="#">BROWSE EVENT<span class="sr-only">(current)</span></a>
+          <li class="nav-item dropdown mr-auto border-right p-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ORGANIZE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">Pricing</a>
+              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="#">Resources</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-auto border-right p-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HELP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Where are my tickets?</a>
+              <a class="dropdown-item" href="#">How to contact the event organizer</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item blue-letter" href="#">Help center</a>
+            </div>
+
+            <li class="nav-item dropdown mr-auto border-right p-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PEPE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Browse Events</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Admin</a>
+                <a class="dropdown-item" href="#">Feature Flags</a>
+                <a class="dropdown-item" href="#">Experiments</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tickets</a>
+                <a class="dropdown-item" href="#">Saved</a>
+                <a class="dropdown-item" href="#">Following</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Manage Events</a>
+                <a class="dropdown-item" href="#">Organizer Profile</a>
+                <a class="dropdown-item" href="#">Contacts</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Account Settings</a>
+                <a class="dropdown-item" href="#">Help</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 pl-2">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">CREATE EVENT</button>
+            </form>
+          </div>
+        </nav>
+
+        
+
+      <div class="row pl-4 pt-5">
+          <div class="col-12">
+            <h3>Crear evento</h3>
+          </div>
+      </div>
+      <div class="row pl-4 pt-3 bg-dark text-white">
+          <div class="col-1" >
+            <p class="border-right border-secondary">EDITAR</p>
+          </div>
+          <div class="col-1">
+            <p>DISEÑAR</p>
+          </div>
+          <div class="col-10">
+          </div>
+      </div>
+      <div class="container pb-5 pt-4">
+
+        <div class="row pt-3">
+          <div class="col-10">
+            <form class="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">EVENT TITLE</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Give it a short distinct name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">LOCATION</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search for a venue or address">
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">DAYS OF THE WEEK</label>
+              <select multiple="multiple" class = 'form-control'>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sabado">Sabado</option>
+                <option value="Domingo">Domingo</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+            <div class="row">
+            <div class="col-3">
+            <label for="exampleInputEmail1">FROM</label></div>
+            <div class="col-3">TO</div>
+            <div class="col-3">
+            <label for="exampleInputEmail1">OCURRES FROM</label></div>
+            <div class="col-3">OCURRES UNTIL</div>
+            </div>
+            <div class="row">
+            <div class="col-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="13:00">
+            </div>
+            <div class="col-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="19:00">
+            </div>
+            <div class="col-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="10/10/2018">
+            </div>
+            <div class="col-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="15/10/2018">
+            </div>
+            </div>
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">DURATION OF TURN</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search for a venue or address">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">CAPACITY PER TURN</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search for a venue or address">
+            </div>
+          </form>
+        <div class="row">
+          <div class="col-12">
+            <a href="" class="btn btn-outline-success">PUBLICÁ TU EVENTO</a>
+          </div>
+        </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+        <!-- Footer -->
+
+        <footer class="page-footer font-small pt-4"
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase">Eventbrite</h5>
+              <p>Events for you.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Buscar Eventos</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Descubrir eventos</a>
+                </li>
+                <li>
+                  <a href="#!">Descargá la aplicación de Eventbrite</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Usar Eventbrite</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Cómo funciona</a>
+                </li>
+                <li>
+                  <a href="#!">Cuánto cuesta</a>
+                </li>
+                <li>
+                  <a href="#!">Blog de Eventbrite</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Eventbrite.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
