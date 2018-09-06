@@ -1,205 +1,284 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title></title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand border-right orange-color pr-2" id='color-orange'href="#">Eventbrite</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- BARRA DE NAVEGACION-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border">
+    <a class="navbar-brand border-right orange-color pr-2" id='color-orange'href="#">Eventbrite</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto ">
-      <li class="nav-item border-right border-left p-2">
-        <a class="nav-link" href="#">BROWSE EVENT<span class="sr-only">(current)</span></a>
-      <li class="nav-item dropdown mr-auto border-right p-2">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ORGANIZE
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Overview</a>
-          <a class="dropdown-item" href="#">Pricing</a>
-          <a class="dropdown-item" href="#">Blog</a>
-          <a class="dropdown-item" href="#">Resources</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown mr-auto border-right p-2">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          HELP
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Where are my tickets?</a>
-          <a class="dropdown-item" href="#">How to contact the event organizer</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item blue-letter" href="#">Help center</a>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item border-right border-left p-1">
+          <a class="nav-link" href="#">BROWSE EVENT<span class="sr-only">(current)</span></a>
+          <li class="nav-item dropdown mr-auto border-right p-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ORGANIZE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">Pricing</a>
+              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="#">Resources</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-auto border-right p-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HELP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Where are my tickets?</a>
+              <a class="dropdown-item" href="#">How to contact the event organizer</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item blue-letter" href="#">Help center</a>
+            </div>
 
-      <li class="nav-item dropdown mr-auto border-right p-2">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PEPE
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Browse Events</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Admin</a>
-          <a class="dropdown-item" href="#">Feature Flags</a>
-          <a class="dropdown-item" href="#">Experiments</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Tickets</a>
-          <a class="dropdown-item" href="#">Saved</a>
-          <a class="dropdown-item" href="#">Following</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Manage Events</a>
-          <a class="dropdown-item" href="#">Organizer Profile</a>
-          <a class="dropdown-item" href="#">Contacts</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Account Settings</a>
-          <a class="dropdown-item" href="#">Help</a>
-          <a class="dropdown-item" href="#">Log out</a>
-        </div>
-    </ul>
-    <form class="form-inline my-2 my-lg-0 pl-2">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">CREATE EVENT</button>
-    </form>
-  </div>
-</nav>
-
-<div class="jzdbox1 jzdbasf jzdcal">
-
-<div class="jzdcalt">September 2018</div>
-
-<span>Su</span>
-<span>Mo</span>
-<span>Tu</span>
-<span>We</span>
-<span>Th</span>
-<span>Fr</span>
-<span>Sa</span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span>1</span>
-<span class="circle" data-title="My 25th birthday!">2</span>
-<span>3</span>
-<span>4</span>
-<span>5</span>
-<span>6</span>
-<span>7</span>
-<span>8</span>
-<span>9</span>
-<span>10</span>
-<span>11</span>
-<span class="circle" data-title="2 month anniversary!">12</span>
-<span>13</span>
-<span>14</span>
-<span>15</span>
-<span>16</span>
-<span>17</span>
-<span>18</span>
-<span>19</span>
-<span>20</span>
-<span>21</span>
-<span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
-<span>23</span>
-<span>24</span>
-<span>25</span>
-<span>26</span>
-<span>27</span>
-<span>28</span>
-<span>29</span>
-<span>30</span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-<span class="jzdb"><!--BLANK--></span>
-</div>
-<!-- Footer -->
-
-<footer class="page-footer font-small pt-4"
-
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-
-          <!-- Content -->
-          <h5 class="text-uppercase">Eventbrite</h5>
-          <p>Events for you.</p>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Buscar Eventos</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Descubrir eventos</a>
-              </li>
-              <li>
-                <a href="#!">Descargá la aplicación de Eventbrite</a>
-              </li>
+            <li class="nav-item dropdown mr-auto border-right p-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PEPE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Browse Events</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Admin</a>
+                <a class="dropdown-item" href="#">Feature Flags</a>
+                <a class="dropdown-item" href="#">Experiments</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Tickets</a>
+                <a class="dropdown-item" href="#">Saved</a>
+                <a class="dropdown-item" href="#">Following</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Manage Events</a>
+                <a class="dropdown-item" href="#">Organizer Profile</a>
+                <a class="dropdown-item" href="#">Contacts</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Account Settings</a>
+                <a class="dropdown-item" href="#">Help</a>
+                <a class="dropdown-item" href="#">Log out</a>
+              </div>
             </ul>
+            <form class="form-inline my-2 my-lg-0 pl-2">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">CREATE EVENT</button>
+            </form>
+          </div>
+        </nav>
+
+
+  <div id="fondo" >
+    <div class="dark-overlay" >
+      <div class="fondo-blanco">
+
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-1"></div>
+          <div class="col-10 ligth-underlay" >
+            <div class="row bg-light mt-4">
+
+              <div class="col-8 mt-3">
+                <img src="img/entrada.jpg" id="width">
+              </div>
+              <div class="col-4 mt-3">
+                <p>SEP.</p>
+                <div class="row">
+                  <div class="col-12">
+                    <p>13</p>
+                  <div class="row">
+                    <div class="col-12">
+                      <h3>Paseo en la bodega "Los Arboles" + vino</h3>
+                    <div class="row">
+                    <div class="col-12">
+                      <h6>por Garzón Producciones</h6>
+                    <div class="row">
+                    <div class="col-12">
+                      <h6>$ 450 – $ 650</h6>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row bg-light  border-top border-bottom pb-5">
+
+              <div class="col-12 text-center">
+                <div class="container">
+        <!-- CALENDARIO-->
+
+        <div class="jzdbox1 jzdbasf jzdcal">
+          <div class="jzdcalt">September 2018</div>
+          <span>Su</span>
+          <span>Mo</span>
+          <span>Tu</span>
+          <span>We</span>
+          <span>Th</span>
+          <span>Fr</span>
+          <span>Sa</span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span>1</span>
+          <a href="#"><span class="circle btn btn-outline-success" data-title="2 month anniversary!">2</span></a>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <a href="#"><span class="circle btn btn-outline-success" data-title="2 month anniversary!">12</span></a>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <a href="#"><span class="circle btn btn-outline-success" data-title="2 month anniversary!">22</span></a>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+          <span>30</span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+        </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row bg-light pb-2 pt-5 border-top border-bottom">
+              <div class="col-9">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                      <p><b>Descripción</b></p>
+                      <p>Música para Volar presenta Cerati Sinfónico II: la nave vuelve a partir”, un recorrido por canciones del prestigioso músico desde sus inicios en Soda Stereo hasta los discos de su etapa solista.<br>Música para Volar está integrado por José Matteucci, en batería y voz, Alexis Thompson, en guitarra, Julieta Sciasci, en bajo y Bruno Moreno en piano, quien además se encargó de componer los arreglos para orquesta y coro.<bt>Durante los últimos dos años, el grupo realizó una extensa gira por Argentina y el exterior con su emotivo homenaje a la música de Gustavo Cerati, entre otros espectáculos.El nuevo show propone un recorrido diferente, con otra selección de composiciones que irán siendo abordadas a través de la sonoridad que permiten los más de 50 músicos que compartirán escenario, incluyendo orquesta sinfónica y Un coro Polifonico.<br>MULTIMEDIA<br>Cada momento del recorrido musical está acompañado por imágenes a cargo del realizador audiovisual rosarino Hernán Roperto, quien además dirigirá una serie de cámaras sobre el escenario para proyectar detalles y completar la experiencia. El iluminador del espectáculo es Fernando “Moderno” Burgo, mientras que el sonidista es Ernesto Aldaz.<br>EL GRUPO<br>Música para Volar se formó en 2012, y desde hace dos años se encuentra en gira por todo el país y el exterior con sus espectáculos, que incluyen “Gustavo Cerati Sinfónico”, “Música para Volar + Kubrick”, “Paseo eléctrico” y “Hello! Charly Unplugged”. Una constante en su carrera es el profundo respeto por la obra musical que abordan, así como la búsqueda de generar experiencias integrales en el espectador, diseñando cada detalle de la puesta en función de crear momentos únicos de reencuentro con las composiciones.<br>VIDEOS<br>https://www.youtube.com/watch?v=XOp29cYbiaQ<br>https://www.youtube.com/watch?v=Jkh9ZiZzYhw</p>
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+
+                  
+                </div>
+
+              </div>
+              <div class="col-3 text-center">
+                <p>FECHA Y HORA</p>
+              </div>
+            </div>
 
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Usar Eventbrite</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Cómo funciona</a>
-              </li>
-              <li>
-                <a href="#!">Cuánto cuesta</a>
-              </li>
-              <li>
-                <a href="#!">Blog de Eventbrite</a>
-              </li>
-            </ul>
-
-          </div>
-          <!-- Grid column -->
+          <div class="col-1"></div>
+        </div>
+      </div>
 
       </div>
-      <!-- Grid row -->
-
     </div>
-    <!-- Footer Links -->
+</div>
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Eventbrite.com</a>
-    </div>
-    <!-- Copyright -->
+        <!-- Footer -->
 
-  </footer>
-  <!-- Footer -->
+        <footer class="page-footer font-small pt-4"
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase">Eventbrite</h5>
+              <p>Events for you.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Buscar Eventos</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Descubrir eventos</a>
+                </li>
+                <li>
+                  <a href="#!">Descargá la aplicación de Eventbrite</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Usar Eventbrite</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Cómo funciona</a>
+                </li>
+                <li>
+                  <a href="#!">Cuánto cuesta</a>
+                </li>
+                <li>
+                  <a href="#!">Blog de Eventbrite</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Eventbrite.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
